@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- my stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+	<title>To the Peak</title>
+</head>
+
+<body>
+  <div class="container containerMain bg-light">
+	  
+    <!-- navbar -->
+    <div class="row navi text-align-center">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md navbar-light backGNav">
+        <div class="container-fluid">
+          <!-- IMAGE LOGO -->
+          <a class="navbar-brand" href="index.html">        <img class="img-fluid" src="media/images/logo.png" width="192" height="85" alt="logo"></a>
+          <!-- END IMAGE LOGO -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- NAVBAR LIST ITEMS NOW -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogue.html">Catalogue</a>
+              </li>
+              <!-- DROPDOWN -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mountains
+              </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="everest.html">Everest</a></li>
+                  <li><a class="dropdown-item" href="k2.html">K2</a></li>
+                  <li><a class="dropdown-item" href="kang.html">Kangchenjunga</a></li>
+                  <li><a class="dropdown-item" href="lhotse.html">Lhotse</a></li>
+                </ul>
+              </li> <!-- End Dropdown -->
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul> <!-- End Navbar List-->
+          </div>
+        </div>
+      </nav>
+      </div> <!-- end col-12-->
+    </div> <!-- ROW END1 -->
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <h1 class="text-center p-1 display-6">
+          Mt. Lhotse: The First Ascent
+        </h1>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-3 col-sm-8">
+
+        <div class="card mx-auto p-2 mt-2 me-1 ms-1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Ernst_Reiss.jpg" class="card-img-top img-fluid imgEverest" alt="Ernst Reiss">
+          <div class="card-body bg-light">
+            <h5 class="card-title">Ernst Reiss</h5>
+            <figure class="quoting">
+              <blockquote class="blockquote">
+                <p>1920-2010
+                </p>
+              </blockquote>
+          </figure>
+          </div>
+        </div>
+      </div> <!-- end col-->
+
+      <div class="col-lg-4 col-sm-8 d-flex align-items-center mt-4 me-4 ms-4">
+        <p class="p-3 firstLetter main">
+          &nbsp; &nbsp; The ascent of Lhotse has garnered a little less attention than that of the previous mountains. This is most likely due to its proximity to Everest, coupled with the fact that Everest is seen as the ultimate achievement for a climber. <br>
+          &nbsp; &nbsp; As a result of this, it is difficult to find information regarding the ascent. What can be stated is that Reiss and Luchsinger were part of a Swiss expedition, who both reached the summit on May 18th, 1956. It is also recorded that on the way to the top, Fritz Luchsinger came down with appendicitis and was hospitalized momentarily before the ascent.
+
+        </p>
+      </div>
+      
+      <div class="col-lg-3 col-sm-8">
+        <div class="card mx-auto p-2 mt-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Fritz_Luchsinger_1956.jpg" alt="Fritz Luchsinger">
+          <div class="card-body bg-light">
+            <h5 class="card-title"> Fritz Luchsinger</h5>
+            <figure class="quoting">
+              <blockquote class="blockquote">
+                <p> 1921-1983
+                </p>
+              </blockquote>
+            </figure>
+          </div>
+        </div>
+      </div>
+    
+    </div> <!-- end row -->
+    <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center mt-2">
+      <li class="page-item">
+        <a class="page-link" href="kang.html" aria-label="Previous">
+        <span aria-hidden="true"> &laquo; &nbsp; Previous Mountain</span>
+      </a>
+      </li>
+      <li class="page-item">
+      <a class="page-link" href="index.html" aria-label="Next">
+        <span aria-hidden="true">Home &raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div> <!-- END CONTAINER -->
+
+<!-- full JS package -->
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+
+<!-- for tooltip -->
+<script>
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* style bootstrap fonts with font-size, color ... they are fonts */
+
+body.fadeIt
+{
+  background-color:#f8f9fa;
+      animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+table caption
+{
+  color:black;
+}
+
+.imgMax /* background blue photo */
+{
+    width:100%;
+    opacity:.7;
+    object-fit:cover;
+}
+
+
+.js-reveal
+{
+    opacity: 1;
+    transition: opacity .7s ease-in, margin-top .7s ease-out;
+}
+
+.js-reveal--hidden
+{
+  opacity:0;
+}
+
+.sizeMe /*tenzing and Hillary, index */
+{
+    width:50%;
+    height:50%;
+    /*opacity:.8;*/
+    border-radius:50px;
+    border:2px solid #08396E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*this code for box-shadow was taken from w3 schools! */
+}
+
+.container
+{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+ border:2px solid #08396E;
+     /*this code for box-shadow was taken from w3 schools! */
+  
+}
+
+nav
+{
+   border-bottom:2px solid #08396E;
+}
+
+td
+{
+  width:26%;
+}
+
+.td1
+{
+  width:20%;
+}
+
+.imgTable
+{ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  border:2px solid #08396E;
+}
+
+td a.shadow
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  background-color:#08396E;
+  border:2px solid rgba(17, 129, 249,.7);
+}
+
+
+div.main, p.main, form
+{
+  border:2px solid #08396E;
+  border-radius:2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  background-color:#f8f9fa;
+}
+
+.containerMain h1
+{
+    color:white;
+    border-radius:100px;
+    width:50%;
+    margin:auto;
+    font-size:3vw;
+    background-color:#08396E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:2px solid rgba(17, 129, 249,.7);
+}
+
+
+.backGNav
+{
+  background-color:rgba(17, 129, 249,.7);
+  color:white;
+}
+
+.badge
+{
+  background-color: #08396E;
+}
+
+.btnColor
+{
+ background-color: rgba(17, 129, 249,.7); 
+ color:#08396E;
+}
+
+.btn-primary, .btn-primary:visited {
+  
+  border-color: #6c757d !important;
+  color:#08396E !important;
+  background-color:white !important;
+}
+
+.btn-primary:hover
+{
+  background-color:#08396E!important;
+  color:white !important;
+}
+
+.open:active
+{
+  background-color: rgba(17, 129, 249,.7); 
+  color:#08396E;
+}
+
+
+.accordion-button:not(.collapsed)
+{
+  background:#08396E;
+  color:white;
+}
+
+.pagination a
+{
+  color:#08396E;
+  background-color: white;
+}
+
+.pagination a:hover
+{
+  background-color:#08396E;
+  color:white;
+}

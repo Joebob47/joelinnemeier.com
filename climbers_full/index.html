@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+  <!-- Consider .navbar-text class for a descriptive element in the navbar-->
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <!-- my stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/jquery.min.js"></script>
+
+	<title>To the Peak</title>
+</head>
+
+<body class="fadeIt">
+  <div class="container containerMain">
+	  
+    <div class="row navi text-align-center">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md navbar-light backGNav">
+        <div class="container-fluid">
+          <!-- IMAGE LOGO -->
+          <a class="navbar-brand" href="index.html">        <img class="img-fluid" src="media/images/logo.png" width="192" height="85" alt="logo"></a>
+          <!-- END IMAGE LOGO -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- NAVBAR LIST ITEMS NOW -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogue.html">Catalogue</a>
+              </li>
+              <!-- DROPDOWN -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mountains
+              </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="everest.html">Everest</a></li>
+                  <li><a class="dropdown-item" href="k2.html">K2</a></li>
+                  <li><a class="dropdown-item" href="kang.html">Kangchenjunga</a></li>
+                  <li><a class="dropdown-item" href="lhotse.html">Lhotse</a></li>
+                </ul>
+              </li> <!-- End Dropdown -->
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul> <!-- End Navbar List-->
+          </div>
+        </div>
+      </nav>
+      </div> <!-- end col-12-->
+    </div> <!-- ROW END1 -->
+    
+    <div class="row mainImg position-relative"> <!--ROW 3 IMAGE-->
+      <div class="col-12 lessHeight">
+        <img src="media/images/everest2.jpg" class= "imgMax" alt="Mt. Everest">
+      </div>
+        
+        <div class="text-center position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-6 p-2 borderCirc mb-4">
+                A History of First Ascents
+            </h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Edmund_Hillary_and_Tenzing_Norgay.jpg" class="img-fluid sizeMe fadeInImg" alt="Edmund Hillary and Tenzing Norgay">
+        </div>
+    </div> <!-- ROW END3-->
+                
+    <div class="row footerCreds">
+      <div class="col-12">   
+        <div class="text-center bg-light">
+          <p>
+            Background adapted from
+              <a href="https://commons.wikimedia.org/wiki/File:Mount_Everest_morning.jpg"> Ralf Kayser</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
+              , via Wikimedia Commons
+          </p>
+          <p>
+            <a href="https://commons.wikimedia.org/wiki/File:Edmund_Hillary_and_Tenzing_Norgay.jpg">Jamling Tenzing Norgay</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+          </p>
+        </div>
+      </div>
+    </div> <!-- END FOOTER ROW -->
+    <div class="col-6 mx-auto text-center mb-4">
+      <div class="js-reveal js-reveal--hidden">
+      <a class="btn btn-primary btnIndex mb-1" href="everest.html"> Start the Journey! </a> <br> or <br> <a class="btn btn-primary btnIndex mt-1" href="catalogue.html"> Choose a Mountain! </a>
+    </div>
+    
+
+
+
+    
+
+
+
+    </div> <!-- END OF CONTAINER --> 
+
+
+  <script src="vendor/bootstrap.bundle.min.js" crossorigin="anonymous"></script> <!--  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" -->
+
+  <script src="vendor/jquery.scroll-reveal.js"></script>
+  <script>
+    window.onload=function(){
+    $.fn.scrollReveal(); 
+    }
+  </script>
+
+
+</body>
+</html>

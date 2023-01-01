@@ -1,0 +1,399 @@
+body
+{
+  /*background-color:#fae605;*/
+  background-color:#FFDE5C;
+  font-family:'Spectral', serif;
+  font-weight:lighter;
+  margin:0;
+  padding:0;
+  line-height:1.7em;
+  z-index:1;
+}
+
+a
+{
+  text-decoration:none;
+  font-weight:900;
+  color:black;
+}
+
+p
+{
+  border:2px double black;
+  padding:10px;
+  background-color:white;
+  text-indent:7%;
+}
+
+p::first-letter
+{
+  font-size:200%;
+  font-weight:bold;
+}
+
+figcaption span.make_wider
+{
+  margin-left:1%;
+  margin-right:1%;
+}
+/*PAW PRINT FOR UL, FONTAWESOME ICON*/
+ul
+{
+  padding:0;
+  list-style-type:none;
+}
+
+ul.fa-ul
+{
+  margin:auto;
+  border: 2px double black;
+  padding:15px;
+  background-color:white;
+}
+
+.fas
+{
+  margin-right:12px;
+}
+
+ul ul:only-of-type
+{
+  list-style-type: circle;
+  border:none;
+  padding-left:10%;
+  padding-top:2%;
+  padding-bottom:2%;
+}
+
+h1.centerme
+{
+  text-decoration:underline;
+  /*background-color:#fae605;*/
+  text-align:center;
+  margin-top: 20%;
+  padding:3%;
+  margin:auto;
+  width:50%;
+  font-weight:100;
+}
+
+h2
+{
+  text-decoration:underline;
+  font-weight:lighter;
+}
+
+a:hover
+{
+  text-decoration:underline;
+}
+
+
+#header
+{
+  background-image:url("assets/images/clouds2.jpg");
+  /*https://pixnio.com/nature-landscapes/sky/ozone-wind-daylight-stratosphere-nature-sky-high-atmosphere-cloudy-cloud*/
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  margin-bottom:-10px;
+  /*have to do this below to center, no repeat causing it to short*/
+  border-top:2px double black;
+  border-left:2px double black;
+  border-right:2px double black;
+  /*background-color:#5b98de;*/
+  background-color:#5497F0;
+}
+
+div.header_imgs
+{
+  display: flex;
+  justify-content:center;
+  z-index:1;
+}
+
+
+/*figure.logo
+{
+  border-radius:40%;
+  background-color:hsl(212, 66%, 61%,0.5);
+  border:.1px dashed black;
+}
+*/
+
+figure.logo img
+{
+  margin-left:1%;
+  margin-top:1%;
+}
+/*below will hide the daisies when the screen
+is less than 500 pixels*/
+@media (max-width:700px) {
+ .hide_mobile {
+    display:none;
+  }
+}
+
+@media (max-width:700px) {
+  .hide_background
+{
+  z-index:-1;
+  display:block;
+  position: fixed;
+  height: 100%;
+  width: 8%;
+  background-color:#FC983D;
+  background-image:none !important;
+}
+
+}
+
+/*NAVBAR START*/
+ul.navbar
+{
+  border-top:2px double black;
+  border-bottom:2px double black;
+  background-color:#5497F0;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap:wrap;/*for mobile*/
+  justify-content:center;
+  position:-web-sticky; /*for Safari browser*/
+  position: sticky;
+  top: 0;
+  /*horiz offset, vertoffset, spread readius, blur radius*/
+  -moz-box-shadow:0px 4px 6px -6px black; 
+  -webkit-box-shadow:0px 4px 6px -6px black;
+  box-shadow:0px 4px 6px -6px black;
+  margin-top:10px;
+  /*use z-index 2 here, and 1 for video!!*/
+  z-index:1;
+}
+
+li.nav
+{
+  float: left;
+  background-color:black;
+}
+
+a.navlink
+{
+  display: block;
+  padding: 6px 10px;
+  text-decoration:none;
+  background-color:#5497F0;
+  /*#5b98de matches sky most*/
+  color:black;
+  font-weight:normal;
+}
+
+a.navlink.active
+{
+  /*:#e4e8eb*/
+  background-color:white;
+  color:black;
+  border-left:2px double black;
+  border-right:2px double black;
+  font-weight:normal;
+}
+
+a.navlink.active:hover
+{
+    /*:#e4e8eb*/
+  background-color:white;
+  color:black;
+  border-left:2px double black;
+  border-right:2px double black;
+  font-weight:normal;
+  text-decoration:underline;
+}
+
+a.navlink:hover, a.navlink:focus
+{
+  background-color:#5497F0;
+  color:#e4e8eb;
+  border:none;
+}
+/*NAVBAR END*/
+div.sidebarL, div.sidebarR
+{
+  z-index:-1;
+  display:block;
+  position: fixed;
+  height: 100%;
+  width: 8%;
+  background-color:#FC983D;
+  border-top:none;
+  background-image:url("assets/images/daisies.png");
+  background-position:0% 12%;
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
+
+div.sidebarL
+{
+ top:0;
+ left:0;
+ border-right:2px double black;
+}
+
+div.sidebarR
+{
+  top:0;
+  right:0;
+  border-left:2px double black;
+}
+/* LAYOUT BELOW */
+
+figure
+{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+figure img
+{
+  vertical-align:top;
+}
+
+figure.border img
+{
+  border:2px double black;
+  margin-bottom:2%;
+}
+
+.responsive
+{
+  width:90%;
+  height:auto;
+}
+
+
+figure figcaption
+{
+  text-align:center;
+  background-color:white;
+  padding:4px;
+  border: 2px double black;
+  font-size:80%;
+  width:100%;
+  transition:transform.8s;
+}
+
+figcaption:hover
+{
+  cursor:pointer;
+  font-size:100%;
+}
+figure video
+{
+  border:2px double black;
+  width:100%;
+}
+
+/*below selects all classes starting with "wrapper_"
+that are in a div element*/
+div[class^="wrapper_"]
+{
+  border:2px double black;
+  background-color:#5497F0;
+  padding:20px;
+  width:55%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(190px, .8fr));
+  grid-column-gap: 5%;
+  justify-content:center;
+  justify-items:center;
+}
+/*below is a solution I came up with to make it
+so that when I maximize the screen size, it won't go
+over two elements across! I put it into SEPARATE
+gridded divs.*/
+
+/*INDEX*/
+
+div.wrapper_index
+{
+  grid-template-columns: 1fr;
+}
+
+div.wrapper_index figure img
+{
+  width:80%;
+}
+
+div.wrapper_index figure figcaption
+{
+  width:79%;
+  margin-top:-1%;
+}
+
+/*HOME*/
+
+div.wrapper_home1
+{
+  border-bottom:none;
+}
+
+div.wrapper_home2
+{
+  border-top:none;
+  border-bottom:none;
+}
+
+div.wrapper_home3
+{
+  border-top:none;
+}
+
+div[class^="wrapper_home"] figure figcaption
+{
+  width:87%;
+  margin-top:-2%;
+}
+
+
+
+/*HABITAT*/
+
+div.wrapper_habitat figure video
+{
+  z-index:0;
+}
+
+/*BEHAVIOR*/
+
+div.wrapper_behavior figure
+{
+  border: 2px double black;
+  width:100%;
+  justify-items:center;
+}
+
+div.wrapper_behavior figure audio
+{
+  border: 2px double black;
+  padding: 4px;
+  background-color:#FC983D;
+}
+
+div.wrapper_behavior figure figcaption
+{
+  width:90%;
+}
+
+/*ABOUT*/
+
+div.wrapper_about
+{
+    grid-template-columns: 1fr;
+}
+
+
